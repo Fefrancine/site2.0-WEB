@@ -1,0 +1,145 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer"
+    ; 
+}
+
+header{
+    background-color:  rgb(235, 151, 247);
+    grid-area: header;
+    height: 150px;
+}
+
+main{
+    padding: 100px  ;
+    background-color: rgb(248, 207, 245);
+    grid-area: main;
+    height: 820px;
+}
+
+header h1{
+    text-align: center;
+}
+
+#nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+   text-decoration: none;
+
+}
+#nav > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 100%;
+    color: black;
+
+}
+
+footer{
+    background-color:  rgb(235, 151, 247);
+    grid-area: footer;
+    height: 150px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+section div {
+    border: 1px solid white;
+    height: 400px;
+} 
+
+#titulo {
+    color: black;
+    text-align: center;
+  
+}
+
+.logo img {
+    height: 70px;
+    margin: auto;
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+    height: 35px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    color: plum;
+}
+
+.img1 {
+    height: 306px;
+    width: 214px;
+}
+
+.Livro1 {
+    display: flex;
+    font-size: 0.9rem;
+    color: black;
+    padding: 6px;
+}
+
+p {
+    padding: 6px;
+}
+ul{
+    list-style: none;
+}
+
+.maior {
+    color: rgb(164, 78, 245);
+}
+
+.maior:hover {
+    color: plum;
+} 
+
+.logo2 > img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    padding: 40px;
+}
+
+.logos > img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+}
+
+.logos{
+    display: flex;
+    padding: 25px;
+    margin-left: 10px;
+}
+
+footer > div{
+    display: flex;
+}
+.contato {
+    margin-left: 80px;
+}

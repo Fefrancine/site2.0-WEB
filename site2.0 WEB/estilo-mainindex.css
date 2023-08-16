@@ -1,0 +1,76 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 1fr 5fr;
+    grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+    ; 
+}
+body {
+    background-image: url(./imagens/fotofundo.webp);
+    background-size: cover;
+}
+
+header{
+    background-color: rgb(235, 151, 247);
+    grid-area: header;
+    height: 150px;
+}
+
+main{
+    padding: 100px  ;
+    grid-area: main;
+    height: 700px;
+}
+
+header h1{
+    text-align: center;
+}
+
+#nav {
+    background-color: black;
+    width: 100%;
+   
+
+}
+#nav > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 100%;
+}
+
+#titulo {
+    color: black;
+    text-align: center;
+  
+}
+
+.logo img {
+    height: 70px;
+    margin: auto;
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+    height: 35px;
+}
+
+a {
+    display: block;
+   
+}
+
+a:hover {
+    color: plum;
+}
+
+.fotofundo {
+    width: 100px;
+}
+
